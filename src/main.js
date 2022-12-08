@@ -1,8 +1,17 @@
 import Vue from 'vue'
-import App from './App.vue'
-
 Vue.config.productionTip = false
 
+//import App from "@/apps/Templates/Scoping";
+//import App from "@/apps/Components/Static";
+//import App from "@/apps/Components/Async";
+//import App from "@/apps/Methods/Events";
+//import App from "@/apps/Methods/Methods";
+import App from "@/apps/Injects/Provider";
+
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#app',
+  components: {
+    App
+  },
+  template: '<app/>'
+})
