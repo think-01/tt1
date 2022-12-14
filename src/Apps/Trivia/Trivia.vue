@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>Trivia</h1>
+
     <smart-input :valid="true" :pending="false" :disabled="false"/>
     <smart-input :valid="true" :pending="false" :disabled="true"/>
     <smart-input :valid="true" :pending="true" :disabled="false"/>
@@ -13,7 +15,7 @@
 </template>
 
 <script>
-import SmartInput from "@/components/SmartInput";
+import SmartInput from "@/components/SmartInput.vue";
 
 export default {
   components: {

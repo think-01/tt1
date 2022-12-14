@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>XState</h1>
     <smart-input
         :valid="valid"
         :pending="pending"
@@ -14,7 +15,7 @@
 </template>
 
 <script>
-import SmartInput from "@/components/SmartInput";
+import SmartInput from "@/components/SmartInput.vue";
 import { interpret } from 'xstate';
 import inputService, {states} from './input.service';
 

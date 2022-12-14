@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>Flags</h1>
+
     <smart-input
         :valid="valid"
         :pending="pending"
@@ -14,7 +16,7 @@
 </template>
 
 <script>
-import SmartInput from "@/components/SmartInput";
+import SmartInput from "@/components/SmartInput.vue";
 import {isEmail} from "@/components/utils";
 
 export default {

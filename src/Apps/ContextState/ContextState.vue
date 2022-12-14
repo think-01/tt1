@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>ContextState</h1>
+
     <smart-input
         :valid="valid"
         :pending="pending"
@@ -14,8 +16,8 @@
 </template>
 
 <script>
-import SmartInput from "@/components/SmartInput";
-import inputService, { states, transistions } from "./input.service";
+import SmartInput from "@/components/SmartInput.vue";
+import inputService, { states } from "./input.service";
 
 
 export default {
