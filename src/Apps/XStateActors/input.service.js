@@ -4,12 +4,10 @@ import validationActorFactory from './validator.actor'
 import counterActorFactory from './counter.actor'
 
 const ValidateEmail = (context, event) => new Promise((resolve, reject) => {
-    console.log('ValidateEmail', event.data)
     isEmail(event.data).then(r => r ? resolve(event.data) : reject())
 });
 
 const ValidateLength = (context, event) => new Promise((resolve, reject) => {
-    console.log('ValidateLength', event.data)
     minLength(event.data).then(r => r ? resolve(event.data) : reject())
 });
 
