@@ -23,6 +23,7 @@ export const states = {
 
 const lengthActor = validationActorFactory(ValidateLength).withContext({name: 'length'})
 const emailActor = validationActorFactory(ValidateEmail).withContext({name: 'email'})
+const counterActor = counterActorFactory(2)
 
 export const transistions = {
     [states.empty]: {
@@ -34,7 +35,7 @@ export const transistions = {
             actors: () => [
                 spawn(lengthActor, 'length'),
                 spawn(emailActor, 'email'),
-                spawn(counterActorFactory(2), 'counter')
+                spawn(counterActor, 'counter')
             ]
         })
     },
