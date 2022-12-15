@@ -13,7 +13,9 @@ inspect({
 //import App from './Apps/ActionsState/ActionsState.vue'
 //import App from './Apps/ContextState/ContextState.vue'
 //import App from './Apps/XState/XState.vue'
-import App from './Apps/RobotState/RobotState.vue'
+//import App from './Apps/RobotState/RobotState.vue'
+//import App from './Apps/XStateChained/XStateChained.vue'
+import App from './Apps/XStateActors/XStateActors.vue'
 
 new Vue({
   el: '#app',
