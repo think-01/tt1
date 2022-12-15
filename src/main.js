@@ -11,8 +11,9 @@ inspect({
 //import App from './Apps/Flags/Flags.vue'
 //import App from './Apps/SimpleState/SimpleState.vue'
 //import App from './Apps/ActionsState/ActionsState.vue'
-import App from './Apps/ContextState/ContextState.vue'
+//import App from './Apps/ContextState/ContextState.vue'
 //import App from './Apps/XState/XState.vue'
+import App from './Apps/RobotState/RobotState.vue'
 
 new Vue({
   el: '#app',

@@ -26,6 +26,8 @@ npm run build
 
 [xState Docs](https://xstate.js.org/docs/)
 
+[Robot Docs](https://thisrobot.life/)
+
 [Practical examples of state machines](https://xstate-catalogue.com/)
 
 [Porting xState into Pinia](https://www.npmjs.com/package/pinia-xstate?activeTab=readme)
@@ -33,3 +35,5 @@ npm run build
 [State visualiser](https://stately.ai/)
 
 [xState-ninja devTools](https://chrome.google.com/webstore/detail/xstate-ninja/cogeldipmkjdfjgjkghlmhehejpmcfif)
+
+[xState alternatives](https://www.rainforestqa.com/blog/selecting-a-finite-state-machine-library-for-react)

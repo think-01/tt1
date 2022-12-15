@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@xstate/inspect": "^0.7.0",
+    "robot3": "^0.3.2",
     "vue": "^2.7.10",
     "xstate": "^4.35.0"
   },
