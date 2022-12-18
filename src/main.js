@@ -1,41 +1,38 @@
 import Vue from 'vue'
 Vue.config.productionTip = false
 
-import { inspect } from "@xstate/inspect";
-
-inspect({
-  iframe: false
-});
-/*
-import App1 from './Apps/Trivia/Trivia.vue'
-import App2 from './Apps/Flags/Flags.vue'
-import App3 from './Apps/SimpleState/SimpleState.vue'
-import App4 from './Apps/ActionsState/ActionsState.vue'
-import App5 from './Apps/ContextState/ContextState.vue'
-import App6 from './Apps/XState/XState.vue'
-import App7 from './Apps/RobotState/RobotState.vue'
-import App8 from './Apps/XStateChained/XStateChained.vue'
-import App9 from './Apps/XStateActors/XStateActors.vue'
-*/
-
 const modules = {
-  Trivia: () => import('./Apps/Trivia/Trivia.vue'),
-  Flags: () => import('./Apps/Flags/Flags.vue'),
-  SimpleState: () => import('./Apps/SimpleState/SimpleState.vue'),
-  ActionsState: () => import('./Apps/ActionsState/ActionsState.vue'),
-  ContextState: () => import('./Apps/ContextState/ContextState.vue'),
-  XState: () => import('./Apps/XState/XState.vue'),
-  RobotState: () => import('./Apps/RobotState/RobotState.vue'),
-  XStateChained: () => import('./Apps/XStateChained/XStateChained.vue'),
+  App1: () => import('./Apps/App1/App1.vue'),
+  App2: () => import('./Apps/App2/App2.vue'),
+  App3: () => import('./Apps/App3/App3.vue'),
+  App4: () => import('./Apps/App4/App4.vue'),
+  App5: () => import('./Apps/App5/App5.vue'),
 }
 
-const mount = App => new Vue({
-  el: '#app',
-  components: {
-    App
-  },
-  template: '<app/>'
-})
+var instance;
 
-modules['Flags']().then(App => mount(App.default))
+const mount = App => {
+  if(instance){
+    instance.$destroy()
+    const container = document.querySelector('#app')
+    container.innerHTML = '<div id="vue"></div>';
+  }
 
+  instance = new Vue({
+    el: '#vue',
+    components: {
+      App
+    },
+    template: "<app/>"
+  })
+}
+
+
+
+function router(evt) {
+  let module = window.location.hash.slice(1) || '/';
+  modules[module]().then(App => mount(App.default))
+};
+
+window.addEventListener('load', router);
+window.addEventListener('hashchange', router);
