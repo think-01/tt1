@@ -1,0 +1,1 @@
+import{s as o,r as e}from"./App5.vue_vue_type_template_lang.a82ce4a9.js";import{n as s}from"../App1/App1.7e06a412.js";import"../App1/App1.vue_vue_type_template_lang.ec29dd56.js";const r={},t={};var l=s(r,e,o,!1,_,null,null,null);function _(c){for(let n in t)this[n]=t[n]}const a=function(){return l.exports}();export{a as default};
