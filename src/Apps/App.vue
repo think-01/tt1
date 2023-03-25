@@ -1,7 +1,9 @@
 <template>
-  <b>aaaaaaaaaaaaaaaaa</b>
+  <b>{{ x }}</b>
 </template>
 
-<script>
-export default {}
+<script lang="ts" setup>
+
+const x : string = "aaaaaaaa"
+
 </script>
