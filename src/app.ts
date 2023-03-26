@@ -1,6 +1,7 @@
 import Vue from 'vue'
 
-import App from './Apps/TypePredicates/App.vue'
+import App from './Apps/TypeGuards/App.vue'
+//import App from './Apps/TypePredicates/App.vue'
 
 Vue.config.productionTip = false
 

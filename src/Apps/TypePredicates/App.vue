@@ -1,43 +1,24 @@
 <template>
   <ul>
-    <li v-for="recordLine in recordLines" :key="recordLine">
-      {{ recordLine }}
+    <li v-for="record in records" :key="record">
+      {{ record }}
     </li>
   </ul>
 </template>
 
 <script setup lang="ts">
-import getRecord, {sport} from "./type-predicates"
+  import {Sport, getMyRecord} from './sports'
+  import {makeLifting} from "@/Apps/TypePredicates/lifting";
+  import {makeRunning} from "@/Apps/TypePredicates/running";
+  import {makeClimbing} from "@/Apps/TypePredicates/climbing";
 
-const records : sport[] = [
-  {
-    __type: 'lifting',
-    exercise: 'dead lift',
-    weight: 80,
-    reps: 8,
-  },
-  {
-    __type: 'running',
-    distance: 5,
-    time: 30,
-  },
-  {
-    __type: 'lifting',
-    exercise: 'bench press',
-    weight: 40,
-    reps: 12,
-  },
-  {
-    __type: 'climbing',
-    style: 'boulder',
-    grade: '6b'
-  },
-  {
-    __type: 'climbing',
-    style: 'lead climb',
-    grade: '6c'
-  }
-]
+  const activities : Sport[] = [
+      makeLifting('dead lift', 80, 8),
+      makeRunning(5, 30),
+      makeLifting('bench press', 40, 12),
+      makeClimbing('boulder', '6b'),
+      makeClimbing('lead climb', '6c')
+  ]
 
-const recordLines = records.map(sport => getRecord(sport))
+  const records = activities.map(sport => getMyRecord(sport))
 </script>
