@@ -9,7 +9,7 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "importHelpers": true,
-        "isolatedModules": false,
+        "isolatedModules": true,
         "noEmit": true,
         "allowJs": true,
         "experimentalDecorators": true,
@@ -24,7 +24,7 @@
         "baseUrl": ".",
         "paths": {
             "@/*": [
-                "src/*"
+                "./src/*"
             ],
             "vue/*": [
                 "/vue/dist/vue.esm.js/*"
