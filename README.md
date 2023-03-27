@@ -23,7 +23,7 @@
 7. **/Apps/Classes**
    1. shows basic oop syntax 
 8. **/Apps/Generics**
-   1. introduces type generics syntax and concept 
+   1. introduces type generics syntax and concept
 
 ## Project setup
 ```
