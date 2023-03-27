@@ -1,24 +1,17 @@
 <template>
-  <ul>
-    <li v-for="record in records" :key="record">
-      {{ record }}
-    </li>
-  </ul>
+  <div>
+  <h4>Here are my sport achievements</h4>
+  <p v-for="achievement in achievements">{{achievement}}</p>
+  </div>
 </template>
 
 <script setup lang="ts">
-  import {Sport, getMyRecord} from './sports'
-  import {makeLifting} from "@/Apps/TypePredicates/lifting";
-  import {makeRunning} from "@/Apps/TypePredicates/running";
-  import {makeClimbing} from "@/Apps/TypePredicates/climbing";
+  import { getAchievement, Sport } from "./sports";
 
-  const activities : Sport[] = [
-      makeLifting('dead lift', 80, 8),
-      makeRunning(5, 30),
-      makeLifting('bench press', 40, 12),
-      makeClimbing('boulder', '6b'),
-      makeClimbing('lead climb', '6c')
-  ]
+  const sportsData: Sport[] = []
+  sportsData.push({ distance: 5, time: 30 })
+  sportsData.push({ distance: 250, time: 7,style: "mountain" })
+  sportsData.push({ style: "lead climb", grade: "6c" })
 
-  const records = activities.map(sport => getMyRecord(sport))
+  const achievements = sportsData.map(getAchievement)
 </script>

@@ -1,38 +1,24 @@
 <template>
-  <ul>
-    <li v-for="record in records" :key="record">
-      {{ record }}
-    </li>
-  </ul>
+  <div>
+  <h4>Here are my sport achievements</h4>
+  <p v-for="achievement in achievements">{{achievement}}</p>
+  </div>
 </template>
 
 <script setup lang="ts">
-  import {Sport, getMyRecord} from './sports'
+import {climbing, getAchievement, Sport} from "./sports";
 
-  const activities : Sport[] = [
-    {
-      exercise: 'dead lift',
-      weight: 80,
-      reps: 8
-    },
-    {
-      distance: 5,
-      time: 30
-    },
-    {
-      exercise: 'bench press',
-      weight: 40,
-      reps: 12
-    },
-    {
-      style: 'boulder',
-      grade: '6b'
-    },
-    {
-      style: 'lead climb',
-      grade: '6c'
-    }
-  ]
+  const sportsData: Sport[] = []
+  sportsData.push({ exercise: "dead lift", weight: 115, reps: 8})
+  sportsData.push({ exercise: "bench press", weight: 75, reps: 10})
+  sportsData.push({ distance: 5, time: 30 })
+  sportsData.push({ style: "boulder", grade: "7a" })
+  sportsData.push({ style: "lead climb", grade: "6c" })
 
-  const records = activities.map(sport => getMyRecord(sport))
+  const achievements = [...sportsData, null].map(getAchievement)
+  //const achievements = [...sportsData, "whatever"].map(getAchievement)
+  //const achievements = [...sportsData, { distance: 12.5, time: 74 }].map(getAchievement)
+  //const achievements = [...sportsData, { style: "lead climb", grade: "6c" }].map(getAchievement)
+  //const achievements = [...sportsData, { style: "lead climb", grade: "6c" } as climbing].map(getAchievement)
+  //const achievements = [...sportsData, { style: "do nothing", grade: "but I'm still happy" } as climbing].map(getAchievement)
 </script>

@@ -1,7 +1,11 @@
 import Vue from 'vue'
 
-import App from './Apps/TypeGuards/App.vue'
-//import App from './Apps/TypePredicates/App.vue'
+//import App from './Apps/Trivia/App.vue'
+//import App from './Apps/Typing/App.vue'
+//import App from './Apps/TypeAliasing/App.vue'
+//import App from './Apps/TypeNarrowing/App.vue'
+//import App from './Apps/TypeGuards/App.vue'
+import App from './Apps/TypePredicates/App.vue'
 
 Vue.config.productionTip = false
 
@@ -12,22 +16,9 @@ export default () => {
   if(el !== null) {
     new Vue({
       el,
-      components: {
-        App
-      },
+      components: { App },
       template: '<app/>'
     })
   }
 
 }
-
-/*
-const a = 1
-const b = {}
-const c = []
-const d = {a:1, b:'b'}
-const e = [1, 'x', {a:1, b:'b'}]
-
-b = { x:1}
-d.a = 'x'
-*/
