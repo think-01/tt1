@@ -24,6 +24,7 @@
    1. shows basic oop syntax 
 8. **/Apps/Generics**
    1. introduces type generics syntax and concept
+   2. some extra comments on TS syntax
 
 ## Project setup
 ```

@@ -38,7 +38,8 @@
         "src/**/*"
     ],
     "exclude": [
-        "src/Apps/Typing/inference.ts"
+        "src/Apps/Typing/inference.ts",
+        "src/Apps/Generics/extras.ts"
     ],
     "references": [
         { "path": "./tsconfig.node.json" }
