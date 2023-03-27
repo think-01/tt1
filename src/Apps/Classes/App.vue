@@ -1,12 +1,12 @@
 <template>
   <div>
   <h4>Here are my sport achievements</h4>
-  <p v-for="achievement in achievements">{{achievement}}</p>
+  <p v-for="achievement in achievements">{{achievement.text}}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-  import { getAchievement } from "./sports";
+  import { getAchievementClass } from "./sports";
   import {sport} from "./types";
 
   const sportsData: sport[] = []
@@ -14,5 +14,5 @@
   sportsData.push({ distance: 250, time: 7,style: "mountain" })
   sportsData.push({ style: "lead climb", grade: "6c" })
 
-  const achievements = sportsData.map(getAchievement)
+  const achievements = sportsData.map(getAchievementClass)
 </script>

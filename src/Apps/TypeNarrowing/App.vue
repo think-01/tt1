@@ -15,9 +15,9 @@
   //type climbing = { style: "boulder" | "lead climb", grade: string }
   //type climbing = { style: "boulder" | "lead climb", grade: "5a" | "5b" | "5c" | "6a" | "6b" | "6c" | "7a" | "7b" | "7c" | "8a" | "8b" | "8c" | "9a" | "9b" | "9c" }
 
-  type Sport = lifting | running | climbing
+  type sport = lifting | running | climbing
 
-  const sportsData: Sport[] = []
+  const sportsData: sport[] = []
   sportsData.push({ exercise: "dead lift", weight: 115, reps: 8})
   sportsData.push({ exercise: "bench press", weight: 75, reps: 10})
   sportsData.push({ distance: 5, time: 30 })

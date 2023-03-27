@@ -8,18 +8,18 @@
 <script setup lang="ts">
   import { getAchievement } from "./sports";
 
-  type Sport = any
-  //type Sport = { }
-  //type Sport = { exercise: string }
-  //type Sport = { exercise: string, weight: number, reps: number }
-  //type Sport = { exercise: string, weight: number, reps: number, distance: number }
-  //type Sport = { exercise: string, weight: number, reps: number, distance?: number }
-  //type Sport = { exercise: string, weight: number, reps: number, distance?: number, time?: number }
-  //type Sport = { exercise?: string, weight?: number, reps?: number, distance?: number, time?: number }
-  //type Sport = { exercise: string, weight: number, reps: number } | { distance: number, time: number }
-  //type Sport = { exercise: string, weight: number, reps: number } | { distance: number, time: number } | { style: string, grade: string }
+  type sport = any
+  //type sport = { }
+  //type sport = { exercise: string }
+  //type sport = { exercise: string, weight: number, reps: number }
+  //type sport = { exercise: string, weight: number, reps: number, distance: number }
+  //type sport = { exercise: string, weight: number, reps: number, distance?: number }
+  //type sport = { exercise: string, weight: number, reps: number, distance?: number, time?: number }
+  //type sport = { exercise?: string, weight?: number, reps?: number, distance?: number, time?: number }
+  //type sport = { exercise: string, weight: number, reps: number } | { distance: number, time: number }
+  //type sport = { exercise: string, weight: number, reps: number } | { distance: number, time: number } | { style: string, grade: string }
 
-  const sportsData: Sport[] = []
+  const sportsData: sport[] = []
   sportsData.push({ exercise: "dead lift", weight: 115, reps: 8})
   sportsData.push({ exercise: "bench press", weight: 75, reps: 10})
   sportsData.push({ distance: 5, time: 30 })

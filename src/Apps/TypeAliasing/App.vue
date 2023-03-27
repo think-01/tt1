@@ -12,9 +12,9 @@
   type running = { distance: number, time: number }
   type climbing = { style: string, grade: string }
 
-  type Sport = lifting | running | climbing
+  type sport = lifting | running | climbing
 
-  const sportsData: Sport[] = []
+  const sportsData: sport[] = []
   sportsData.push({ exercise: "dead lift", weight: 115, reps: 8})
   sportsData.push({ exercise: "bench press", weight: 75, reps: 10})
   sportsData.push({ distance: 5, time: 30 })

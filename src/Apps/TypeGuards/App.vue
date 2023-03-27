@@ -6,9 +6,10 @@
 </template>
 
 <script setup lang="ts">
-import {climbing, getAchievement, Sport} from "./sports";
+  import {getAchievement} from "./sports";
+  import {climbing, sport} from "./types";
 
-  const sportsData: Sport[] = []
+  const sportsData: sport[] = []
   sportsData.push({ exercise: "dead lift", weight: 115, reps: 8})
   sportsData.push({ exercise: "bench press", weight: 75, reps: 10})
   sportsData.push({ distance: 5, time: 30 })
