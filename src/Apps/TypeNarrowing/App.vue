@@ -25,7 +25,7 @@
   sportsData.push({ style: "lead climb", grade: "6c" })
 
   sportsData.push({ style: "do nothing", grade: "but I'm still happy" })
-  //sportsData.push({ style: "boulder", grade: "only in my dreams" })
+  sportsData.push({ style: "boulder", grade: "but I'm pretending" })
 
   const achievements = sportsData.map(getAchievement)
   //const achievements = [...sportsData, null].map(getAchievement)

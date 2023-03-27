@@ -29,7 +29,7 @@
   sportsData.push({ sport: "football", year: 2019, place: 1 })
   sportsData.push({ exercise: "russian twist", reps: 25 })
   sportsData.push({ style: "free dive", depth: 22 })
-  sportsData.push(null)
+  //sportsData.push(null)
 
   const achievements = sportsData.map(getAchievement)
 </script>

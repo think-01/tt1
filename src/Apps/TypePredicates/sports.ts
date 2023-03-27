@@ -1,5 +1,6 @@
 import {sport, cycling} from "./types";
 
+//const isCycling = (activity : sport) => "distance" in activity && activity.distance / activity.time > 1
 const isCycling = (activity : sport): activity is cycling => "distance" in activity && activity.distance / activity.time > 1
 
 export const getAchievement = (activity : sport) => {
