@@ -5,7 +5,8 @@
    2. demonstrates why static typing is a benefit
 2. **/Apps/Typing**
    1. type inference explained with examples
-   2. demonstration how static typing can help you avoid bugs
+   2. specific functional types
+   3. demonstration how static typing can help you avoid bugs
 3. **/Apps/TypeAliasing** 
    1. shows type aliasing code simplification 
    2. exposes loose typing problem
@@ -22,9 +23,9 @@
    3. type fingerprint technique
 7. **/Apps/Classes**
    1. shows basic oop syntax 
+   2. some extra comments on TS oop syntax
 8. **/Apps/Generics**
    1. introduces type generics syntax and concept
-   2. some extra comments on TS syntax
 
 ## Project setup
 ```
