@@ -39,7 +39,8 @@
     ],
     "exclude": [
         "src/Apps/Typing/inference.ts",
-        "src/Apps/Generics/extras.ts"
+        "src/Apps/Classes/extras.ts",
+        "src/Apps/Typing/special.ts"
     ],
     "references": [
         { "path": "./tsconfig.node.json" }
