@@ -1,0 +1,12 @@
+[
+  {
+    "say": "Hello, I'm a bot. I can help you with submitting your entry"
+  },
+  {
+    "say": "Tell me your name",
+    "field": {
+      "name": "name",
+      "type": "string"
+    },
+  }
+]

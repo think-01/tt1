@@ -9,7 +9,7 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "importHelpers": true,
-        "isolatedModules": true,
+        "isolatedModules": false,
         "noEmit": true,
         "allowJs": true,
         "experimentalDecorators": true,
@@ -24,7 +24,7 @@
         "baseUrl": ".",
         "paths": {
             "@/*": [
-                "./src/*"
+                "src/*"
             ],
             "vue/*": [
                 "/vue/dist/vue.esm.js/*"
@@ -38,9 +38,6 @@
         "src/**/*"
     ],
     "exclude": [
-        "src/Apps/Typing/inference.ts",
-        "src/Apps/Classes/extras.ts",
-        "src/Apps/Typing/special.ts"
     ],
     "references": [
         { "path": "./tsconfig.node.json" }
