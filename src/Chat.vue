@@ -10,9 +10,7 @@
     </div>
 
     <div class="feed-input">
-      <div class="container">
-        <h1 class="title">Bottom Row</h1>
-      </div>
+        <ui-console/>
     </div>
 
   </div>
@@ -21,6 +19,7 @@
 <script setup lang="ts">
   import Conversation from "@/chat/Conversation.vue";
   import messages from "./conversation.js"
+  import UiConsole from "@/chat/UIConsole.vue";
 </script>
 
 <style lang="sass">

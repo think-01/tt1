@@ -1,8 +1,14 @@
-$bubble_radius: 2*$box-radius;
+$bubble_radius: $radius-rounded;
 $bubble_padding: $size-6;
 $bubble_color: $white;
-$bubble_color_invert: $info-dark;
+$bubble_color_invert: darken($info-dark, 15);
 $chat_canvas_color: $dark;
+
+$top_background_color: darken($green, 15);
+$top_text_color: $white;
+
+$console_background_color: lighten($cyan, 10);
+$console_text_color: $cyan-invert;
 
 .feed-hero {
   background-color: $top_background_color;
@@ -10,12 +16,16 @@ $chat_canvas_color: $dark;
   position: sticky;
   top: 0;
   z-index: 2;
-  padding: $size-5;
+  padding: $size-7;
   box-shadow: $navbar-dropdown-boxed-shadow;
+  padding-left: $size-2;
+  font-size: $size-5;
+  font-weight: $weight-medium;
 }
 
 .feed-input {
-  background-color: #ccc;
+  background-color: $console_background_color;
+  color: $console_text_color;
   position: sticky;
   bottom: 0;
   z-index: 3;
