@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+.left-column {
+  background-color: #eee;
+}
+
+.left-column-top {
+  position: sticky;
+  top: 0;
+}
+
+.right-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

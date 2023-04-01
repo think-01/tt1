@@ -5,7 +5,6 @@
 </template>
 
 <script setup lang="ts">
-import {defineEmits, defineProps} from "vue";
 import { OptionsMessageValue } from "./MessageData";
 
 const props = defineProps<{value: OptionsMessageValue}>()

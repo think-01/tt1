@@ -1,0 +1,59 @@
+$bubble_radius: 2*$box-radius;
+$bubble_padding: $size-6;
+$bubble_color: $white;
+$bubble_color_invert: $info-dark;
+$chat_canvas_color: $dark;
+
+.feed-hero {
+  background-color: $top_background_color;
+  color: $top_text_color;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: $size-5;
+  box-shadow: $navbar-dropdown-boxed-shadow;
+}
+
+.feed-input {
+  background-color: #ccc;
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  padding: $size-5;
+}
+
+.feed-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1;
+  background: lighten($chat_canvas_color, 75);
+  padding: $size-3;
+}
+
+.sentence {
+  position: relative;
+  border-radius: $bubble_radius;
+  padding: $bubble_padding 1.5*$bubble_padding;
+  border: none;
+  box-shadow: $shadow;
+}
+
+.fromBot {
+  border-bottom-left-radius: 0;
+  text-align: left;
+  margin-right: 10em;
+  background-color: $bubble_color;
+  color: $bubble_color_invert;
+  align-self: flex-start;
+
+}
+
+.fromUser {
+  border-bottom-right-radius: 0;
+  text-align: right;
+  margin-left: 10em;
+  background-color: $bubble_color_invert;
+  color: $bubble_color;
+  align-self: flex-end;
+}

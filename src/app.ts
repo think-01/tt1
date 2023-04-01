@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import App from './Chat.vue'
+//import App from './Chat.vue'
+import App from './Layout.vue'
 
 Vue.config.productionTip = false
 
