@@ -5,3 +5,10 @@
     </div>
   </div>
 </template>
+
+<style scoped lang="scss">
+  .left-column-top {
+    position: sticky;
+    top: 0;
+  }
+</style>
