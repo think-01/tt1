@@ -6,12 +6,15 @@
     "build": "vite build",
     "serve": "vite preview"
   },
+  "dependencies": {
+    "@xstate/inspect": "^0.7.0",
+    "robot3": "^0.3.2",
+    "vue": "^2.7.10",
+    "xstate": "^4.35.0"
+  },
   "devDependencies": {
     "vite": "^3.0.9",
     "vite-plugin-vue2": "^2.0.2",
     "vue-template-compiler": "^2.7.10"
-  },
-  "dependencies": {
-    "vue": "^2.7.10"
   }
 }
